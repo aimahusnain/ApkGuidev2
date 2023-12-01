@@ -4,7 +4,7 @@ import siteMetadata from "@/src/utils/siteMetaData";
 
 export const metadata = {
   title: "Contact Me",
-  description: `Contact me through the form available on this page or email me at email`,
+  description: `Contact me through the form available on this page or email me at ${siteMetadata.email}`,
 };
 
 const DynamicLottieAnimation = dynamic(() => import('@/src/components/Contact/LottieAnimation'), {

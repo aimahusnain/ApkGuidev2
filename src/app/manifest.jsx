@@ -5,8 +5,6 @@ export default function manifest() {
       description: 'ApkGuide is a platform where you can download mod apks.',
       start_url: '/',
       display: 'standalone',
-    //   background_color: '#fff',
-    //   theme_color: '#fff',
       icons: [
         {
           src: '/favicon-32x32.png',

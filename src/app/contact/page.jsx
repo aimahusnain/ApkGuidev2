@@ -1,6 +1,9 @@
 import dynamic from 'next/dynamic';
-import ContactForm from "@/src/components/Contact/ContactForm";
-import siteMetadata from "@/src/utils/siteMetaData";
+// import ContactForm from "@/src/components/Contact/ContactForm";
+// import siteMetadata from "@/src/utils/siteMetaData";
+
+const siteMetadata = dynamic(()=>import('@/src/utils/siteMetaData'))
+const ContactForm = dynamic(()=>import('@/src/components/Contact/ContactForm'))
 
 export const metadata = {
   title: "Contact Me",
@@ -8,7 +11,7 @@ export const metadata = {
 };
 
 const DynamicLottieAnimation = dynamic(() => import('@/src/components/Contact/LottieAnimation'), {
-  ssr: false, // Set ssr to false to prevent server-side rendering
+  ssr: false,
 });
 
 export default function Contact() {

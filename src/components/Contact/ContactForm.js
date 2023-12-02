@@ -16,7 +16,7 @@ export default function ContactForm() {
       onSubmit={handleSubmit(onSubmit)}
       className="mt-12 text-base xs:text-lg sm:text-xl font-medium leading-relaxed font-in"
     >
-      Hello! My name is{" "}
+      Hello! My name is
       <input
         type="text"
         placeholder="your name"
